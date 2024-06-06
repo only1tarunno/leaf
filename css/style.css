@@ -24,72 +24,75 @@ li {
   min-height: 100vh;
   align-items: center;
 }
-#calenderRight {
-  text-align: center;
+.mobileinfo {
+  padding: 20px 0px 40px;
 }
-.calenderRightImg {
-  width: 80px;
-  margin: 0 auto;
-}
-#calenderRight h1 {
-  font-weight: 700;
-  color: #0c0f0c;
-  font-size: 48px;
-  padding-top: 26px;
-}
-#calenderRight p {
-  font-size: 18px;
-  color: #8a8f97;
-  padding: 16px 0;
-}
-#calenderRight a {
-  background-color: #468f77;
-  color: #fff;
-  padding: 16px 40px;
-  border-radius: 30px;
+.iconswrapper {
+  width: 140px;
 }
 
-#groupSearch form label,
+.groupSearch form label,
 .group-title h3 {
   font-size: 14px;
   color: #0c0f0c;
   font-weight: 600;
 }
-#groupSearch form input {
+.groupSearch form input {
   font-size: 14px;
   color: #0c0f0c;
   border-radius: 8px;
   height: 42px;
 }
-#groupSearch form input::placeholder {
+.groupSearch form input::placeholder {
   color: #8a8f97;
 }
 
-#groupSearch form input:focus {
+.groupSearch form input:focus {
   box-shadow: none;
 }
-#groupName {
-  margin-bottom: 60px;
-}
+
 .group-title p {
   font-size: 12px;
   color: #8a8f97;
   padding-top: 4px;
 }
 .group-cards {
-  row-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 .single-card {
+  text-align: center;
   padding: 8px 12px 8px 12px;
   border: 1px solid #e1e2e1;
   border-radius: 10px;
-  width: 23%;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
 }
+
+/* Hide the actual checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+/* Style for selected cards */
+input[type="checkbox"]:checked + label .single-card,
+.single-card.selected {
+  background-color: #d9edf7;
+  border-color: #31708f;
+}
+/* Additional styling for plus card */
+.single-card .plus {
+  text-align: center;
+}
+
+.single-card img {
+  max-width: 100%;
+}
+
 .plus {
   width: 11px;
 }
@@ -123,11 +126,47 @@ li {
   border: 1px solid #000000;
   border-radius: 50%;
 }
-
-.availabililtyBtn a {
+.availabililtyBtn {
+  padding: 40px 0 20px;
+}
+.availabililtyBtn button {
   background: #468f77;
   color: #fff;
   width: 100%;
   border-radius: 30px;
   padding: 12px 0;
+}
+.availabililtyBtn button:hover {
+  background: #29755c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .calender {
+    padding: 0px 0;
+  }
+  .mobileinfo h3 {
+    font-size: 14px;
+    color: #0c0f0c;
+    font-weight: 600;
+  }
+
+  .iconswrapper {
+    width: 70px;
+  }
+  .mobileinfo {
+    padding: 16px 0px 16px;
+  }
+}
+@media (max-width: 372px) {
+  .single-card h4 {
+    font-size: 14px;
+  }
+  .single-card h5 {
+    color: #8a8f97;
+    font-size: 8px;
+  }
+  .single-card p {
+    font-size: 10px;
+  }
 }

@@ -22,44 +22,19 @@
     />
     <!-- custom css  -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/midea.css" />
   </head>
+  <!-- <h1 class="">Simplify Your Scheduling</h1> -->
   <body>
     <!-- calender section start -->
     <section class="calender">
       <div class="container">
         <div class="row justify-content-between" id="calenderRow">
-          <!-- desktop extra info  -->
-          <div class="d-none d-md-block col-md-5 col-lg-5">
-            <div id="calenderRight">
-              <div class="calenderRightImg">
-                <img src="img/fav.png" class="img-fluid" alt="" />
-              </div>
-              <h1 class="">Simplify Your Scheduling</h1>
-              <p class="">
-                Leaf brings your group scheduling and availability together in
-                one place. Easily search for groups, check availability, and
-                plan your next event. Join us and make scheduling hassle-free!
-              </p>
-              <a href="#" class="btn mt-3">Create a New Group</a>
-            </div>
-          </div>
           <!-- calender date /mobile calender start  -->
-          <div class="col-md-7 col-lg-6">
+          <div class="col-md-8 mx-auto">
             <!-- mobile top logo part  -->
             <div id="calenderLeft">
               <div class="mobileinfo">
-                <div
-                  class="d-flex d-md-none align-items-center justify-content-between py-3"
-                >
-                  <h3>9:41</h3>
-                  <div class="iconswrapper">
-                    <img src="img/wifiicons.png" class="img-fluid" alt="" />
-                  </div>
-                </div>
-                <div
-                  class="d-flex d-md-none align-items-center justify-content-between pb-3"
-                >
+                <div class="d-flex align-items-center justify-content-between">
                   <div class="iconswrapper">
                     <img src="img/logo.png" class="img-fluid" alt="" />
                   </div>
@@ -69,7 +44,7 @@
             </div>
 
             <!-- group Search part  -->
-            <div class="form mb-3" id="groupSearch">
+            <div class="form mb-3 groupSearch">
               <form>
                 <label for="name" class="form-label">1. Enter Name</label>
                 <input
@@ -82,129 +57,345 @@
               </form>
             </div>
             <!-- groupName part  -->
-            <div class="" id="groupName">
+            <div class="groupName">
               <div class="group-title">
                 <h3>2. Group Name's availability</h3>
                 <p>Add your upcoming availability.</p>
               </div>
-              <div
-                class="d-flex flex-wrap group-cards mt-3 justify-content-between gap-y-2"
-              >
-                <div class="single-card">
-                  <div class="plus">
-                    <img src="img/plus.png" class="img-fluid" alt="" />
+              <form id="calendarForm">
+                <div class="group-cards mt-3 justify-content-between gap-y-2">
+                  <!-- 1st row  -->
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card1"
+                      name="dates"
+                      value="card1"
+                    />
+                    <label for="card1">
+                      <div class="plus mx-auto">
+                        <img src="img/plus.png" class="img-fluid" alt="" />
+                      </div>
+                      <p>Add date</p>
+                    </label>
                   </div>
-                  <p>Add date</p>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card2"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card2">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                      <span>4</span>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card3"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card3">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                      <span>3</span>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card4"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card4">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                      <span>3</span>
+                    </label>
+                  </div>
+                  <!-- 2nd row  -->
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card5"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card5">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card6"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card6">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card7"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card7">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card8"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card8">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <!-- 2nd row  -->
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card5"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card5">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card6"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card6">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card7"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card7">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card8"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card8">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <!-- 3rd row  -->
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card5"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card5">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card6"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card6">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card7"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card7">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card8"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card8">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <!-- 4th row  -->
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card5"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card5">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card6"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card6">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card7"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card7">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card8"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card8">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <!-- 5th row  -->
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card5"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card5">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card6"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card6">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card7"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card7">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <div class="single-card">
+                    <input
+                      type="checkbox"
+                      id="card8"
+                      name="dates"
+                      value="Sep 24 Monday"
+                    />
+                    <label for="card8">
+                      <h4>Sep 24</h4>
+                      <h5>Monday</h5>
+                      <p>Add date</p>
+                    </label>
+                  </div>
+                  <!-- Additional rows can be added similarly -->
                 </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                  <span>4</span>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                  <span>3</span>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                  <span>3</span>
-                </div>
-                <!-- 2nd row  -->
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <!-- 3rd row  -->
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <!-- 4th row  -->
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <!-- 5th row  -->
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <div class="single-card">
-                  <h4>Sep 24</h4>
-                  <h5>Monday</h5>
-                  <p>Add date</p>
-                </div>
-                <!-- 5th row  ends-->
-              </div>
-            </div>
 
-            <!-- Submit availabililty button  -->
-            <div class="availabililtyBtn">
-              <a href="#" class="btn">Submit availabililty (#)</a>
+                <!-- Submit availabililty button  -->
+                <div class="availabililtyBtn">
+                  <button type="submit" class="btn">
+                    Submit availabililty (#)
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -218,5 +409,32 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.querySelectorAll(".single-card").forEach((card) => {
+        card.addEventListener("click", function () {
+          const checkbox = this.querySelector('input[type="checkbox"]');
+          checkbox.checked = !checkbox.checked;
+          this.classList.toggle("selected", checkbox.checked);
+        });
+      });
+
+      // this code for console log to see if the card is select or not
+
+      // document
+      //   .getElementById("calendarForm")
+      //   .addEventListener("submit", function (event) {
+      //     event.preventDefault(); // Prevent actual form submission
+
+      //     const selectedCards = [];
+      //     document
+      //       .querySelectorAll('input[type="checkbox"]:checked')
+      //       .forEach((checkbox) => {
+      //         selectedCards.push(checkbox.value);
+      //       });
+
+      //     console.log("Selected cards:", selectedCards);
+      //   });
+    </script>
   </body>
 </html>
