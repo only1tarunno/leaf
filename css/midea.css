@@ -1,0 +1,54 @@
+@media (max-width: 960px) {
+  .calender {
+    padding: 60px 0;
+  }
+  #calenderRight h1 {
+    font-size: 34px;
+  }
+  .calenderRightImg {
+    width: 70px;
+  }
+  #calenderRight p {
+    font-size: 14px;
+  }
+  #groupName {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .calender {
+    padding: 0px 0;
+  }
+  .mobileinfo h3 {
+    font-size: 14px;
+    color: #0c0f0c;
+    font-weight: 600;
+  }
+
+  .iconswrapper {
+    width: 70px;
+  }
+  .availabililtyBtn {
+    position: fixed;
+    bottom: 20px;
+    width: 93%;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #groupName {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 372px) {
+  .single-card h4 {
+    font-size: 14px;
+  }
+  .single-card h5 {
+    color: #8a8f97;
+    font-size: 8px;
+  }
+  .single-card p {
+    font-size: 10px;
+  }
+}
