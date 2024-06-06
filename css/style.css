@@ -74,6 +74,10 @@ li {
   position: relative;
 }
 
+#calendarForm label {
+  cursor: pointer;
+}
+
 /* Hide the actual checkbox */
 input[type="checkbox"] {
   display: none;
